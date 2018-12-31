@@ -1,6 +1,6 @@
 # SpringMVC
-This is a WebStie Using SpringMVC framework.
-The Environment: Jdk 1.8, Apache Tomcat 9.0.12, Intellij Idea.
+This is a WebStie Using SpringMVC framework.  
+The Environment: Jdk 1.8, Apache Tomcat 9.0.12, Intellij Idea.  
 
 ## *The Website have fallowing features.*
 
@@ -20,8 +20,8 @@ A waterfall designed page for goods review.(We haven't finished the shopping car
 
 ### Register
 
-Using Ajax for databases check if there are same username or email.
-Using MailSender to send identify code.
+Using Ajax for databases check if there are same username or email.  
+Using MailSender to send identify code.  
 
 ### Login
 
@@ -47,5 +47,5 @@ We haven't split up different users, which means the goods in databases are shar
 
 ## ***Default Value***
 
-Databases: Username: root Password: 666
+Databases: Username: root Password: 666  
 Default Mail: 1051160758@qq.com
