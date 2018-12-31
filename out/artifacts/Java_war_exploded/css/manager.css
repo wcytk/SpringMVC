@@ -1,0 +1,251 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.clear{
+  clear:both;
+}
+input, button {
+  border: none;
+  outline: none;
+}
+
+/*边栏*/
+.sidebar{
+  width: 120px;
+  height: 100%;
+  background-color: rgb(72, 167,224);
+  border-radius: 0 5px 5px 0;
+  box-shadow: 2px 0px 3px #ccc;
+  position: fixed;
+  z-index: 999;
+}
+.sidebar .logo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sidebar .logoimg{
+  width: 100%;
+  height: 30px;
+  /*padding-top: 50px;*/
+  background: url(../img/eye.svg) center no-repeat;
+}
+.sidebar .logoname{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+.sidebar .nav{
+  width: 100%;
+  height: 90px;
+  color: white;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+}
+.nav img {
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  border: 0;
+  padding: 0 25px 0 25px;
+}
+.nav .tittle{
+  text-align: center;
+}
+.cur{
+  background-color:rgb(52,147,214);
+}
+.sidebar .exit{
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+}
+.exit a{
+  text-decoration: underline;
+}
+
+/*主要部分*/
+.main{
+  height: 100%;
+  margin-left: 120px;
+  position: relative;
+  z-index: 1;
+}
+.main .top{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid rgb(72,167,224);
+}
+.main .bot{
+  width: 100%;
+  height: 80%;
+  /*background-color: #eee;*/
+}
+.top .search {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.search form{
+  height: 36px;
+  line-height: 36px;
+}
+.search input{
+  display: inline-block;
+  width: 236px;
+  height: 36px;
+  padding: 2px 10px 2px 10px;
+  border: 1px solid rgb(72,167,224);
+  border-radius: 5px 0 0 5px;
+  float: left;
+}
+.search button{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: rgb(72,167,224);
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.bot .bigTitle{
+  width:120px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #c6f0fe;
+  color:#209bfe;
+  text-align: center;
+  margin: 0 auto;
+}.bigTitle:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #c6f0fe;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+.tab{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+.tab table {
+  width:100%;
+  margin:30px 0;
+  border:0;
+}
+.tab th {
+  font-weight:bold;
+  background-color:#c6f0fe;
+  color:#209bfe;
+}
+.tab,.tab th,.tab td {
+  font-size:0.95em;
+  text-align:center;
+  padding:4px;
+  border-collapse:collapse;
+}
+.tab th {
+  border: 1px solid #c6f0fe;
+  border-width:1px;
+}
+.tab td {
+  border: 1px solid #c6f0fe;
+  border-width:1px;
+}
+.tab tr {
+  border: 1px solid #ffffff;
+  background-color:#f7f7f7;
+}
+.tab a{
+  display: inline-block;
+  padding: 0 0;
+  color: #000;
+  text-decoration: underline;
+}
+.tab button{
+  background-color: transparent;
+  cursor: pointer;
+}
+.pagelist{
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.pagelist a{
+  text-decoration: underline;
+  color: #000;
+}
+.pagelist .tolPage{
+  display: block;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+/*.btn{
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  float: right;
+  border-radius: 50%;
+  cursor: pointer;
+  background: url(../img/add.png) no-repeat;
+}*/
+.btn{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  background: url(../img/add.png) no-repeat;
+  float: right !important;
+  background-position: center;
+}
+.addBox{
+  position: absolute;
+  right: 64px;
+  bottom: 64px;
+  background-color: rgb(198,240,254);
+  float: right;
+  width: 720px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px #abcdef solid;
+  line-height: 60px;
+  text-align: center;
+}
+.addBox input{
+  width: 130px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+.addBox button{
+  background-color: rgb(72,167,224);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+

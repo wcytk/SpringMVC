@@ -1,0 +1,252 @@
+*{margin:0;padding:0;text-decoration:none;}
+@media (max-width: 1876px) {
+	.nav .hidden-00{
+		display: none!important;
+	}
+}
+@media (max-width: 1449px) {
+	.nav .hidden-1{
+		display: none!important;
+	}
+}
+@media (max-width: 1328px) {
+	.nav .hidden-2{
+		display: none!important;
+	}
+}@media (max-width: 1240px) {
+	.nav .hidden-3{
+		display: none!important;
+	}
+}
+@media (max-width: 1150px) {
+	.nav .hidden-4{
+		display: none!important;
+	}
+}
+@media (max-width: 1060px) {
+	.nav .hidden-5{
+		display: none!important;
+	}
+}
+@media (max-width: 1030px) {
+	.nav .hidden-6{
+		display: none!important;
+	}
+}
+@media (max-width: 1000px) {
+	.nav .hidden-7{
+		display: none!important;
+	}
+}
+
+body{
+	padding-top: 50px;	
+}
+/* 搜索框 */
+.search{
+	border-bottom: 2px solid #e4e4e4;
+ 
+	
+}
+.search input{
+	outline: none!important;
+}
+
+/* 头部 */
+.title{
+	margin-top: 20px;
+	height: 50px;
+	vertical-align:text-bottom
+}
+.recent-cab{
+	color: #6a6a6a;
+	border-bottom: 2px solid rgb(72, 167, 224);
+	font-size: 17px;
+	width: 120px;
+	height: 36.4px;
+	text-align: center;
+	cursor: pointer;
+}
+.underline{
+	border-bottom:2px solid #e4e4e4;
+	height: 36.4px; 
+}
+.order{
+	padding: 10px 0 0 0;
+	border-bottom: 1px solid #e4e4e4;
+	 	
+}
+.order li{
+	display: inline-block;
+	list-style: none;
+	cursor: pointer;
+	font-size: 12px;
+	margin: 0px;
+	border-right: 1px solid #e3e3e3;
+	padding-right: 8px;
+	padding-left:  8px;
+}
+.thumbnail{
+	transition: all 0.2s;
+}
+.thumbnail:hover{
+background-color: #e4e4e4;
+}
+.caption span{
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.caption p{
+	margin-bottom: 0px!important;
+} 
+/* 账号信息 */
+.menu-right{
+	float: right;
+}
+.menu-right li{
+	height: 52px;
+}
+.notification-menu .info-number {
+	height: 50px;
+	font-size: 16px;
+	color: #333;
+	transition: all 0.2s ease-out 0s;
+}
+.notification-menu  li:hover {
+background-color: rgb(72, 167, 224);
+}
+.info-number .badge {
+	background: #F86A5E;
+	border-radius: 2px;
+	font-size: 10px;
+	line-height: 13px;
+	padding: 2px 5px;
+	position: absolute;
+	right: 4px;
+	top: 8px;
+}
+.notification-menu .dropdown-toggle {
+	padding: 12px 16px;
+	border-color: rgb(72, 167, 224);
+	background: rgb(72, 167, 224);
+	border-radius: 0;
+	border: none;
+}
+.notification-menu .dropdown-menu-head {
+	padding: 0;
+	min-width: 300px;
+}
+.notification-menu .dropdown-menu-head ul {
+	border: 1px solid #ddd;
+	border-top: 0;
+	padding: 0;
+}
+.notification-menu .dropdown-menu li {
+	display: block;
+	margin: 0;
+	float: none;
+	background: none;
+	padding: 0px;
+}
+.notification-menu .dropdown-menu-head li a {
+	color: #333;
+	padding: 10px 15px;
+	opacity: 1;
+}
+.message-list span.subject {
+	display: block;
+	margin-left: 10px;
+	font-weight: 600;
+	font-size: 13px;
+}
+.message-list span.message {
+	display: block;
+	margin-left: 10px;
+	white-space: initial;
+}
+
+.message-list span.time {
+	margin-left: 10px;
+	color: #aeaaaa;
+	display: block;
+}
+.notification-menu .dropdown-menu li a {
+	font-size: 13px;
+	padding: 7px 10px;
+	border-radius: 2px;
+	transition: all 0.2s ease-out 0s;
+}
+.notification-menu   li a:hover {
+    background: rgb(52, 147, 214);
+    color: #3c3a3a;
+}
+.notification-menu .dropdown-menu li i {
+	font-size: 11px;
+	margin-right: 5px;
+}
+.notification-menu .dropdown-menu-head {
+	padding: 0;
+	min-width: 300px;
+}
+.dropdown-menu-head {
+	background: #fff
+}
+
+.dropdown-menu-head .title {
+    background: #F2F2F2;
+    color: #292626;
+    padding: 15px;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 600;
+}
+.notification-menu .dropdown-toggle .caret {
+	margin-left: 5px;
+}
+.notification-menu .dropdown-toggle img {
+	margin-right: 5px;
+}
+.message-list .message-scroll-list a:hover{
+	background-color:rgb(52, 147, 214);
+}
+.message-list a {
+	color: #7a7777;
+	font-size: 13px;
+	padding: 10px 10px;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #f3f3f3;
+}
+.open .dropdown-menu{
+	padding: 0;
+}
+.notification-menu > li {
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+.btn-ac{
+	transition: opacity 0.2s;
+}
+.btn-ac > img{
+	height:28px;
+	width:28px
+}
+ .open>.dropdown-toggle.btn-default:hover{
+ 	background-color: rgb(52, 147, 214)!important;
+ }
+ .open>.dropdown-toggle.btn-default:focus{
+ 	background-color: rgb(52, 147, 214)!important;
+ }
+.btn-default:active:hover{
+ 	background-color: rgb(52, 147, 214)!important;
+ }
+.pull-right > li{
+	height: 33px;
+}
+#menu{
+	margin-top:20px
+}
+input:-internal-autofill-selected{
+background-color: green!important;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/java/com" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/homework/controller/ProductController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/homework/entity/Product.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/homework/mapper/ProductMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/homework/service/ProductService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/homework/util/Ip.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/homework/util/Log.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/resourses" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/resourses/log4j2.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/resourses/mapper/ProductMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/resourses/mybatis.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/commonMana.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/findManyProduct.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/goodschange.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/goodssearch.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/manager.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/shouye.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/userchange.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/page/usersearch.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/add.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/addGood.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/css/index.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/forgetPassword.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/img" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/img/eye-blue.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/img/tou.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/index.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/js/index.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/js/login.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/pictures" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/register.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/shouye.jsp" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:mvc="http://www.springframework.org/schema/mvc"
+        xmlns:context="http://www.springframework.org/schema/context"
+
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+    <!--配置扫描器-->
+    <mvc:annotation-driven/>
+    <!--视图解析器-->
+    <context:component-scan base-package="com.homework.controller"/>
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/page/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    <bean name="service" class="com.homework.service.impl.ServiceImpl"/>
+    <mvc:resources location="/pictures/" mapping="/pictures/**"/>
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/img/" mapping="/img/**"/>
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/"/>
+            <mvc:exclude-mapping path="/checkUser"/>
+            <mvc:exclude-mapping path="/checkEmail"/>
+            <mvc:exclude-mapping path="/register"/>
+            <mvc:exclude-mapping path="/forgetPassword"/>
+            <mvc:exclude-mapping path="/updatePass"/>
+            <mvc:exclude-mapping path="/youxiang"/>
+            <mvc:exclude-mapping path="/js/**"/>
+            <mvc:exclude-mapping path="/img/**"/>
+            <mvc:exclude-mapping path="/css/**"/>
+            <mvc:exclude-mapping path="/picture/**"/>
+            <mvc:exclude-mapping path="/VerifyCode/**"/>
+            <mvc:exclude-mapping path="/checkUser"/>
+            <mvc:exclude-mapping path="/checkEmail"/>
+            <mvc:exclude-mapping path="/login"/>
+            <mvc:exclude-mapping path="/font-awesome-4.7.0/**"/>
+            <bean class="com.homework.interceptor.userInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/ListAll"/>
+            <mvc:mapping path="/update"/>
+            <mvc:mapping path="/updateUser"/>
+            <bean class="com.homework.interceptor.adminInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

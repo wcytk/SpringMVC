@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.homework.mapper.ProductMapper">
+    <resultMap id="ProductResult" type="com.homework.entity.Product">
+        <id property="productId" column="productId"/>
+        <result column="productName" property="productName"/>
+        <result column="statement" property="statement"/>
+        <result column="productPrice" property="productPrice"/>
+        <result column="image" property="image"/>
+    </resultMap>
+
+    <select id="performProduct" resultMap="ProductResult">
+      SELECT * FROM product
+    </select>
+
+    <select id="findByProductName" resultMap="ProductResult">
+        select * from product where productName like "%"#{productName}"%"
+    </select>
+
+    <select id="findByProductId" parameterType="int" resultType="com.homework.entity.Product">
+        select productId,productName,statement,productPrice,image from product where productId=#{productId}
+    </select>
+
+    <insert id="insertProduct" parameterType="com.homework.entity.Product" useGeneratedKeys="true" keyProperty="productId">
+        INSERT INTO product(productName,statement,productPrice,image) VALUES (#{productName},#{statement},#{productPrice},#{image})
+    </insert>
+
+    <delete id="deleteByProductId" parameterType="int">
+        delete from product where productId=#{productId}
+    </delete>
+
+    <update id="updateGood" parameterType="com.homework.entity.Product">
+        update product set productName=#{productName},statement=#{statement},productPrice=#{productPrice},image=#{image} where productId=#{productId}
+    </update>
+
+    <!--<update id="updateUser" parameterType="com.homework.entity.User">-->
+    <!--update user set username=#{username},password=#{password} where id=#{id}-->
+  <!--</update>-->
+</mapper>
