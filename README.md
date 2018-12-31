@@ -2,21 +2,21 @@
 This is a WebStie Using SpringMVC framework.
 The Environment: Jdk 1.8, Apache Tomcat 9.0.12, Intellij Idea.
 
-*The Website have fallowing features.*
+## *The Website have fallowing features.*
 
-## 1. Admin
+### 1. Admin
 
 For admin, the ability to add, delete, change and find user and goods.
 
-## 2. User
+### 2. User
 
 For user, only the ability to add, delete, change and find goods.
 
-## 3. Goods
+### 3. Goods
 
 A waterfall designed page for goods review.(We haven't finished the shopping cart)
 
-**The functions we have realized**
+## **The functions we have realized**
 
 ### Register
 
@@ -35,7 +35,7 @@ Using INtercepter to check for session. Without Login, the pages cannont be ache
 
 Using Log4j2 to record logs, defaults logs path is in D://logs/user
 
-***The functions to be realized***
+## ***The functions to be realized***
 
 ### The Shopping cart
 
@@ -45,7 +45,7 @@ To build a real shopping website we need a real Shopping cart.
 
 We haven't split up different users, which means the goods in databases are shared. So any user can modify evey goods, which is obvious not our intention.
 
-***Default Value***
+## ***Default Value***
 
 Databases: Username: root Password: 666
 Default Mail: 1051160758@qq.com
