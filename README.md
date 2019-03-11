@@ -48,7 +48,7 @@ We haven't split up different users, which means the goods in databases are shar
 ## ***Default Value***
 
 Databases: Username: root Password: 666  
-Default Mail: 1051160758@qq.com
+Default Mail: wcytk@outlook.com
 
 Notice: You should change to your own database and Email
 
